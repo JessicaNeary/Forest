@@ -1,0 +1,14 @@
+html{
+background-image: url("images/parallax-forest-back-trees.png");
+background-size: cover;
+}
+
+body{
+	background-image: url("images/parallax-forest-middle-trees.png");
+	background-size: cover;
+}
+
+.forest{
+	background-image: url("images/parallax-forest-front-trees.png");
+	background-size: cover;
+}
