@@ -5,14 +5,14 @@ function move(e){
 	if(e.keyCode==39){
 		//move forest right
 		shift(".forest", "-=10px");
-		shift("html", "-=40px");
+		shift("body", "-=40px");
 	}
 	else if(e.keyCode==37){
 		//if not at start of forest
 		if(parseInt($(".forest").css('marginLeft')) < parseInt('-10px')){
 			//move forest left
 			shift(".forest", "+=10px");
-			shift("html", "+=40px");
+			shift("body", "+=40px");
 		}
 	}
 }
