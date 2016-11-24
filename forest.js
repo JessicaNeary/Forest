@@ -3,6 +3,7 @@ document.onkeydown = move;
 function move(e){
 			console.log(e.keyCode);
 	if(e.keyCode==39){
+		walkRight();
 		//move forest right
 		shift(".forest", "-=10px");
 		shift("html", "-=30px");
@@ -10,11 +11,22 @@ function move(e){
 	else if(e.keyCode==37){
 		//if not at start of forest
 		if(parseInt($(".forest").css('marginLeft')) < parseInt('-10px')){
+			walkLeft();
 			//move forest left
 			shift(".forest", "+=10px");
 			shift("html", "+=30px");
 		}
 	}
+}
+
+function walkLeft(){
+	$(".kiwi").css('background', 'url(images/kiwi/walkingLeft.png)');
+	$(".kiwi").css('background-size', '500px');
+}
+
+function walkRight(){
+	$(".kiwi").css('background', "url(images/kiwi/walkingRight.png)");
+	$(".kiwi").css('background-size', '500px');
 }
 
 function shift(item,pixels){

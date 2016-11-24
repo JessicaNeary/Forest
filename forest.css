@@ -26,6 +26,7 @@ body{
 .forest{
 	background-image: url("images/parallax-forest-front-trees.png");
 	z-index: 2;
+	position: relative;
 }
 
 .kiwi{
