@@ -2,7 +2,7 @@ html{
 	height: 100%;
 }
 
-body, .trees, .forest {
+body, .screen, .trees, .forest {
   height: 100%;
 	background-size: contain;
 	background-repeat: repeat-x;
@@ -15,12 +15,13 @@ body{
 }
 
 .trees{
-	background-image: url("images/parallax-forest-middle-trees.png");
+	background-image: url("images/parallax-forest-lights.png");
 }
 
 .screen{
 	width: 100%;
 	height: 100%;
+	background-image: url("images/parallax-forest-middle-trees.png");
 }
 
 .forest{
@@ -36,9 +37,9 @@ body{
 	box-sizing: border-box;
 	background-repeat: no-repeat;
 	left: 400px;
-	top: 440px;
+	top: 450px;
 	background-size: 500px;
 	width: 100px;
-	height: 70px;
+	height: 60px;
 	z-index: 1;
 }
